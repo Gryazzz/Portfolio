@@ -197,7 +197,7 @@ header.masthead h2 {
 
 .portfolio {
   margin-bottom: -15px;
-  background: url('/img/portfolio/neural_network.png');
+  background: url('../img/portfolio/neural_network.png');
   /* background-size: cover; */
 }
 
