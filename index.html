@@ -428,24 +428,36 @@
                     2. Percentages from corresponding months of different years are averaged.<br>
                     3. The resulting twelve percentages are the seasonal index.
                 </p>
+
                 <h5 class="text-left">Q2: Does Metro performance impact the demand for other transportation resources?</h5>
                 <p class="text-left">
                   Conclusion:  Analysis indicates Metro is losing passengers to Uber and some other mode of transportation other than taxi or bus.  Perhaps the number of private car drivers is increasing:
                   <img class="img-fluid mb-5" src="img/portfolio/metroq2.png" alt="otherresources">
                 </p>
+
                 <h5 class="text-left">Q3: Can one predict the availability of transportation resources based on metro past performance?</h5>
                 <p class="text-left">
                   There is no strong relationship between Metro internal KPIs and Ridership:
                   <img class="img-fluid mb-5" src="img/portfolio/metrocorr.png" alt="otherresources">
-                  
+                  The strongest correllation is between Metro and Taxi Ridership:
+                  <img class="img-fluid mb-5" src="img/portfolio/metrotransportride.png" alt="transport_ridership_corr">
+                  There is no significant dependency between Metro KPIs and other Transportation types:
+                  <img class="img-fluid mb-5" src="img/portfolio/metrokpitransport.png" alt="transport_metrokpi_corr">
                 </p>
 
-                <br>The goal of a project was to answer the following questions:<br>
-                1. Does time of year impact demand for transportation resources?<br>
-                2. Does Metro performance impact the demand for other transportation resources?<br>
-                3. Can one predict the availability of transportation resources based on metro past performance?<br>
-                <br>Tools and techniques: Python, Pandas, Matplotlib, Seaborn, Scipy, Linregres, Statsmodels.<br>
-                Link to a repository: <a href="https://github.com/yegorkryukov/project_3" target="blank">GitHub</a> <br>
+                <h4 class="text-left">Outcome & Recommendations</h4>
+                <p class="text-left">
+                    * Time of the year impacts Metro demand.<br>
+                    * Metro ridership loosing customers to other means of transportation even though economy is strong, and government employees get 100% refunds for rides.<br>
+                    * Metro & Bus lost 600K customers and Uber got 1.4M customer.  Where those additional customers come from? Is Uber data correct?<br>
+                    * Current internal metro KPIs are not significant factors in ridership numbers, even though the Rail On Time Performance KPI has the strongest impact on Metro Ridership it still does not answer the question about the decrease in ridership.
+                </p>
+                <h5 class="text-left">What now?</h5>
+                <p class="text-left">Metro needs to share their data better and if metro wants more customers it should probably measure different set of KPIs</p>
+
+                <p class="text-left">Tools and techniques: Python, Pandas, Scipy, Linregres, Statsmodels, Numpy, Matplotlib, Seaborn.<br>
+                Link to a repository: <a href="https://github.com/yegorkryukov/project_3" target="blank">GitHub</a><br>
+                Download full presentation in pptx: <a href="img/transportation_analysis.pptx" download>Presentation</a></p>
               </p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
