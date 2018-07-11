@@ -398,9 +398,53 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Washington Metro Area Transportation Analysis</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/metrocorr.png" alt="">
-              <p class="mb-5">Why Metro ridership in DC is declining? What factors impact Metro performance and does Metro impact other transportation resources?<br>
-                <br>Tools and techniques: Python, Pandas, Matplotlib and Seaborn.<br>
+              <img class="img-fluid mb-5" src="img/portfolio/metrohead.png" alt="metro">
+              <p class="mb-5 text-left">
+                <b>What</b><br>
+                The Washington Metropolitan Transit Authority provides bus and rail transit to the Washington region.<br>
+                <br><b>Why</b><br>
+                Transporting over 300,000,000 passengers a year WMATA is facing many challenges concerning safety, ridership, and funding.<br>
+                <img class="img-fluid mb-5" src="img/portfolio/totalrides.png" alt="rides">
+                <br><b>Bottomline</b><br>
+                Why Metro ridership is declining?  What factors impact Metro performance and does Metro impact other transportation resources?
+                <h5 class="text-left">Is metro getting better or other ways of transportation are taking over its customers?</h5><br>
+                <p class="text-left">
+                  <b>Data</b><br>
+                  Use DC area transportation data from WMATA, Taxi and Uber to understand relationships between metro performance and the use of other modes of transportation. Collect monthly ridership data for determining time of year impacts.<br>
+                  <br>Sources: Metro and US Government Data: Various reports for years 2012-2017: Vital Signs, Metro’s Key Performance Indicators (KPI), annual and Metro Performance Reports, Federal Transit Administration Monthly Module Raw Data Release, Bureau of Economic Analysis, Census Bureau, DC Government: Department of For-Hire Vehicles, Uber.
+                </p>
+                <h4 class="text-left">Questions</h4>
+                <h5 class="text-left">Q1: Does time of year impact demand for transportation resources?</h5>
+                <img class="img-fluid mb-5" src="img/portfolio/metroseason.png" alt="seasonaltrend">
+                <p class="text-left">
+                  <b>The graph of the ridership data is a characteristic of a time series.</b><br>
+                    1. Long Term Trend or Movement<br>
+                    2. Seasonal Movement<br>
+                    3. Long-Term Cyclical Movement<br>
+                    4. Irregular Movement<br>
+                    
+                  <br><b>Variation Found by the Average Percentage Method</b><br>
+                    1. Each month ridership data expressed as a percentages for the whole year ridership.<br>
+                    2. Percentages from corresponding months of different years are averaged.<br>
+                    3. The resulting twelve percentages are the seasonal index.
+                </p>
+                <h5 class="text-left">Q2: Does Metro performance impact the demand for other transportation resources?</h5>
+                <p class="text-left">
+                  Conclusion:  Analysis indicates Metro is losing passengers to Uber and some other mode of transportation other than taxi or bus.  Perhaps the number of private car drivers is increasing:
+                  <img class="img-fluid mb-5" src="img/portfolio/metroq2.png" alt="otherresources">
+                </p>
+                <h5 class="text-left">Q3: Can one predict the availability of transportation resources based on metro past performance?</h5>
+                <p class="text-left">
+                  There is no strong relationship between Metro internal KPIs and Ridership:
+                  <img class="img-fluid mb-5" src="img/portfolio/metrocorr.png" alt="otherresources">
+                  
+                </p>
+
+                <br>The goal of a project was to answer the following questions:<br>
+                1. Does time of year impact demand for transportation resources?<br>
+                2. Does Metro performance impact the demand for other transportation resources?<br>
+                3. Can one predict the availability of transportation resources based on metro past performance?<br>
+                <br>Tools and techniques: Python, Pandas, Matplotlib, Seaborn, Scipy, Linregres, Statsmodels.<br>
                 Link to a repository: <a href="https://github.com/yegorkryukov/project_3" target="blank">GitHub</a> <br>
               </p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
